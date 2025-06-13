@@ -11,6 +11,9 @@ export default defineConfig({
     vue(),
     vueJsx(),
     vueDevTools(),
+        eslintPlugin({
+      overrideConfigFile: 'eslint.config.js',
+    }),
   ],
   resolve: {
     alias: {
